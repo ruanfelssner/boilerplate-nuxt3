@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-import { User } from '@/types'
+import { User } from '~/logic/types'
 
 export const useUserStore = defineStore('userStore', () => {
   const user = ref<User>({

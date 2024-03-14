@@ -8,15 +8,12 @@
   </ff-container>
 </template>
 <script>
-import { UserService } from '@/services'
+import { userService } from '~/logic/services'
+
 export default {
   async mounted() {
-    try {
-      const data = await UserService.getUser()
-      console.log(data, 'data')
-    } catch (e) {
-      console.log(e, 'error')
-    }
+    const data = await userService.getUser()
+    console.log(data)
   }
 }
 </script>

@@ -28,10 +28,24 @@ export default defineNuxtConfig({
     },
     storage: 'localStorage'
   },
-  devtools: { enabled: true, timeline: { enabled: true } },
+  devtools: {
+    enabled: true,
+    timeline: { enabled: true }
+  },
   vue: {
     compilerOptions: {
-      isCustomElement: tag => tag.startsWith('ff-')
+      isCustomElement: tag =>
+        tag.startsWith('ff-')
+    }
+  },
+  runtimeConfig: {
+    public: {
+      api: {
+        apiBaseUrl:
+          process.env.API_BASE_URL || '',
+        isMockActive:
+          process.env.IS_MOCK_ACTIVE === 'true'
+      }
     }
   }
 })
