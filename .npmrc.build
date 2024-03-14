@@ -1,0 +1,2 @@
+@fairfax:registry=https://pkgs.dev.azure.com/ntfairfaxdev/_packaging/ntfairfaxdev/npm/registry/
+always-auth=true
