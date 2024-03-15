@@ -6,7 +6,9 @@ export class UserService {
     this.httpAdapter = httpAdapter
   }
   async getUser(): Promise<User> {
-    return this.httpAdapter.get({ url: '/' })
+    return this.httpAdapter.get({
+      url: 'http://google.com/'
+    })
   }
   async getHome(): Promise<any> {
     return this.httpAdapter.get({

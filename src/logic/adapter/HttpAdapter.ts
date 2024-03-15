@@ -3,14 +3,21 @@ import {
   $Fetch
 } from 'nitropack'
 
-const baseUrl = 'https://swapi.py4e.com/api'
+const config = useRuntimeConfig()
+
+const baseUrl = config.public.api.apiBaseUrl
 
 const fetch: $Fetch<any, NitroFetchRequest> = (
   input: RequestInfo,
   init?: RequestInit | undefined
 ): Promise<Response> => {
   const headers: HeadersInit = init?.headers || {}
-  return window.fetch(`${baseUrl}${input}`, {
+  const url =
+    typeof input === 'string' &&
+    input.includes('http')
+      ? input
+      : `${baseUrl}${input}`
+  return window.fetch(url, {
     ...init,
     headers
   })
