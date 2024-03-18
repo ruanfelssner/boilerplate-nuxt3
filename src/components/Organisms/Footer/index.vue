@@ -122,9 +122,9 @@
           </p>
           <p>
             Atendimento para pessoas com
-            <br >
+            <br />
             necessidades especiais de fala e
-            <br >
+            <br />
             audição:
             <strong>0800 602 5058</strong>
           </p>
@@ -153,7 +153,7 @@
         </div>
       </div>
     </div>
-    <hr class="opacity-30" >
+    <hr class="opacity-30" />
     <div class="placeFooter-container">
       <p
         class="copyright text-center text-white py-6"
