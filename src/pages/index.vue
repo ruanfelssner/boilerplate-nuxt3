@@ -5,6 +5,8 @@
       size="medium"
       type="primary"
     />
+
+    <h2 class="teste">Teste</h2>
   </ff-container>
 </template>
 <script>
