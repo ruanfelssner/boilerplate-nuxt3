@@ -11,19 +11,19 @@
   </a>
 </template>
 <script setup lang="ts">
-  const props = defineProps({
-    name: {
-      type: String,
-      default: ''
-    },
-    link: {
-      type: String,
-      default: ''
-    }
-  })
+const props = defineProps({
+  name: {
+    type: String,
+    default: ''
+  },
+  link: {
+    type: String,
+    default: ''
+  }
+})
 </script>
 <style lang="scss" scoped>
-  a {
-    color: #020125;
-  }
+a {
+  color: #020125;
+}
 </style>
