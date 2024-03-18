@@ -165,48 +165,48 @@
 </template>
 <script setup lang="ts"></script>
 <style lang="scss" scoped>
-.placeFooter {
-  background: #2b364a;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 24px;
-  .placeFooter-whatsapp {
-    background: #32d583;
-  }
-  .placeFooter-chat {
-    background: #6dabe2;
-  }
-  .placeFooter-subtitle {
-    font-size: 24px;
-    font-weight: 700;
+  .placeFooter {
+    background: #2b364a;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
     line-height: 24px;
-    color: #ffffff;
-    margin-bottom: 16px;
-  }
-  .placeFooter-info {
-    p {
-      color: #d4d9e2;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 24px;
+    .placeFooter-whatsapp {
+      background: #32d583;
     }
-  }
-  .placeFooter-links {
-    li {
-      @apply mb-2;
-      a {
+    .placeFooter-chat {
+      background: #6dabe2;
+    }
+    .placeFooter-subtitle {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+    .placeFooter-info {
+      p {
         color: #d4d9e2;
-        font-size: 20px;
-        font-style: normal;
+        font-size: 16px;
         font-weight: 300;
         line-height: 24px;
-        text-decoration-line: underline;
-        &:hover {
-          @apply opacity-80;
+      }
+    }
+    .placeFooter-links {
+      li {
+        @apply mb-2;
+        a {
+          color: #d4d9e2;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 24px;
+          text-decoration-line: underline;
+          &:hover {
+            @apply opacity-80;
+          }
         }
       }
     }
   }
-}
 </style>
