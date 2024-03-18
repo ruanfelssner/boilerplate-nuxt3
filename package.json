@@ -14,7 +14,7 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "prepare": "husky",
-    "pre-commit": "yarn lintfix && git add ."
+    "pre-commit": "yarn lintfix && git add"
   },
   "dependencies": {
     "@fairfax/ff-design-system": "^0.1.3",
