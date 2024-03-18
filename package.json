@@ -12,16 +12,9 @@
     "lint": "yarn lint:js && yarn lint:prettier",
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
-  },  
-  "husky": {
-    "hooks": {
-      "pre-commit": "echo 'teste'"
-    }
+    "coverage": "vitest run --coverage",
+    "prepare": "husky"
   },
-  // "lint-staged": {
-  //   "*.{js,ts,vue}": ["yarn lintfix", "git add"]
-  // },
   "dependencies": {
     "@fairfax/ff-design-system": "^0.1.3",
     "@fairfax/ff-ds-agnostic": "^0.0.6",
