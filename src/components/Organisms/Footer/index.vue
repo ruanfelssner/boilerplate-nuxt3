@@ -15,7 +15,7 @@
             src="@/assets/svgs/logo-white.svg"
             class="mb-2"
             alt="Logo Fairfax"
-          >
+          />
         </a>
         <p class="mb-4">
           Estamos há mais de 35 anos no mercado de
